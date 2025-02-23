@@ -12,7 +12,6 @@ class MyNode(Node):
         super().__init__('my_node')
         topic = "/chatter"
         self.get_logger().info('MyNode is listening to Topic -> ' + topic)
-        self.sub = self.create_subscription(String, topic, self.chatter_callback, 5)
         qos_profile = QoSProfile(depth=10, reliability=ReliabilityPolicy.BEST_EFFORT)
         self.sub = self.create_subscription(String, topic, self.chatter_callback, qos_profile)
 
