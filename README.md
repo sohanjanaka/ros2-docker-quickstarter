@@ -54,6 +54,13 @@ Run the Docker Container:
 ```bash
 sudo docker run -it --rm ros2_docker
 ```
+## Using the docker composer
+
+Build and run
+
+```bash
+sudo docker compose build && sudo docker compose up -d
+```
 
 # Contributing
 
