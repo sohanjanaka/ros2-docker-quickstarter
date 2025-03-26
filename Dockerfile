@@ -5,6 +5,7 @@ RUN apt-get update
 # Customize your ROS environment by installing additional packages as needed.
 RUN apt-get install -y ros-${ROS_DISTRO}-demo-nodes-py
 RUN apt-get install -y ros-${ROS_DISTRO}-rqt
+RUN apt-get install -y ros-$ROS_DISTRO-xacro
 
 RUN rm -rf /var/lib/apt/lists/*
 RUN echo 'source "/opt/ros/$ROS_DISTRO/setup.bash"' >> ~/.bashrc
