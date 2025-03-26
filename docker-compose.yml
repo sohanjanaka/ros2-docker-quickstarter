@@ -7,6 +7,9 @@ services:
       dockerfile: Dockerfile
     image: ros2-image
     container_name: ros2-container
+    # ports:
+    #   - 11811:11811 # ROS2 DDS communication
+    #   - 7400-7600:7400-7600 # multicat and unicast
     stdin_open: true
     network_mode: "bridge"
 

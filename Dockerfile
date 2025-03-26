@@ -23,4 +23,4 @@ ADD ros_entrypoint.sh /
 
 ENTRYPOINT ["/ros_entrypoint.sh"]
 
-CMD ["ros2", "run", "my_python_package", "my_node"]
+CMD ["ros2", "launch", "my_python_package", "run.launch.py"]
