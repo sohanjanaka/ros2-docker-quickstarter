@@ -11,7 +11,7 @@ services:
     #   - 11811:11811 # ROS2 DDS communication
     #   - 7400-7600:7400-7600 # multicat and unicast
     stdin_open: true
-    network_mode: "bridge"
+    # network_mode: "host"
 
   # microros-serial:
   #   image: microros/micro-ros-agent:humble
@@ -21,7 +21,6 @@ services:
   #   devices:
   #     - /dev/ttyUSB0:/dev/ttyUSB0
   #   command: serial --dev /dev/ttyUSB0
-  #   network_mode: "bridge"
 
   # microros-udp:
   #   image: microros/micro-ros-agent:humble
@@ -31,4 +30,3 @@ services:
   #   ports:
   #     - "8888:8888/udp"
   #   command: udp4 --port 8888
-  #   network_mode: "bridge"
