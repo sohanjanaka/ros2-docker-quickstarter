@@ -5,27 +5,31 @@ ros2-docker-quickstarter is a lightweight template repository designed to bootst
 ## Project structure
 
 ```bash
+├── docker-compose.yml
 ├── Dockerfile
 ├── gitignore
 ├── README.md
 ├── ros2_ws
-│   └── src
-│       └── my_python_package
-│           ├── my_python_package
-│           │   ├── __init__.py
-│           │   └── my_node.py
-│           ├── package.xml
-│           ├── resource
-│           │   └── my_python_package
-│           ├── setup.cfg
-│           ├── setup.py
-│           └── test
-│               ├── test_copyright.py
-│               ├── test_flake8.py
-│               └── test_pep257.py
+│   └── src
+│       └── my_python_package
+│           ├── launch
+│           │   └── run.launch.py
+│           ├── my_python_package
+│           │   ├── __init__.py
+│           │   └── my_node.py
+│           ├── package.xml
+│           ├── resource
+│           │   └── my_python_package
+│           ├── setup.cfg
+│           ├── setup.py
+│           ├── test
+│           │   ├── test_copyright.py
+│           │   ├── test_flake8.py
+│           │   └── test_pep257.py
+│           └── urdf
+│               └── robot.urdf.xacro
 └── ros_entrypoint.sh
-
-6 directories, 13 files
+8 directories, 16 files
 ```
 
 
